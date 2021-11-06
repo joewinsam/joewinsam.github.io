@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DOCLINE | JOEWIN SAM</title>
+
+  <link rel="stylesheet" href="home.css">
+
+</head>
+
+<body>
+  <!-- Navigation Section -->
+  <header>
+    <nav>
+      <div class="menu">
+        <div class="logo">
+          <a href="#home">DOCLINE</a>
+        </div>
+        <ul>
+          <li><a id="homebtn" href="#home">Home</a></li>
+          <li><a id="aboutbtn" href="#about">About</a></li>
+          <li><a id="Registerbtn" href="#Register">Registration</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <!-- home begins -->
+  <section id="home">
+    <div class="img"></div>
+    <div class="center">
+      <div class="title">Make appointments at your fingertips </div>
+      <!-- <div class="sub_title">Scroll dowm</div> -->
+      <div class="btns">
+        <a href="#Register">
+          <button>Scroll Down</button>
+        </a>
+        
+      </div>
+  </section>
+
+  <!-- About begins -->
+  <section id="about"><br><br><br>
+    <h1 class="about-title">Joewin</h1>
+    <p class="about-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+      been the industry's standard
+      dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type
+      specimen
+      book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining
+      essentially
+      unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
+      and more
+      recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.Lorem Ipsum is
+      simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard
+      dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type
+      specimen
+      book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining
+      essentially
+      unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
+      and more
+      recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+  </section><br><br><br><br>
+
+  <!-- Registration begins -->
+  <section id="register">
+    <div id="Register" class="container">
+      <div class="title">Register Now</div>
+      <div class="content">
+
+        <form action="#">
+          <div class="user-details">
+            <div class="input-box">
+              <span class="details">First Name</span>
+              <input id="fname" type="text" placeholder="Enter your first name" required>
+            </div>
+
+            <div class="input-box">
+              <span class="details">Last Name</span>
+              <input id="lname" type="text" placeholder="Enter your last name" required>
+            </div>
+
+            <div class="input-box">
+              <span class="details">Username</span>
+              <input id="username" type="text" placeholder="Enter your username" required>
+            </div>
+
+            <div class="input-box">
+              <span class="details">Email</span>
+              <input id="email" type="text" placeholder="Enter your email" required>
+            </div>
+
+            <div class="input-box">
+              <span class="details">Phone Number</span>
+              <input id="phoneno" type="text" placeholder="Enter your number" required>
+            </div>
+
+            <div class="input-box">
+              <span class="details">Password</span>
+              <input id="password" type="text" placeholder="Enter your password" required>
+            </div>
+
+            <div class="input-box">
+              <span class="details">Confirm Password</span>
+              <input id="confirmpass" type="text" placeholder="Confirm your password" required>
+            </div>
+
+            <div class="input-box">
+              <label class="reg-details">Registering as: </label>
+
+              <select name="profession" id="profession">
+                <option value="Patient">Patient</option>
+                <option value="Doctor">Doctor</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="gender-details">
+            <input id="male" type="radio" name="gender" id="dot-1">
+            <input id="female" type="radio" name="gender" id="dot-2">
+            <input id="not_to_say" type="radio" name="gender" id="dot-3">
+            <span class="gender-title">Gender</span>
+            <div class="category">
+              <label for="dot-1">
+                <span class="dot one"></span>
+                <span class="gender">Male</span>
+              </label>
+
+              <label for="dot-2">
+                <span class="dot two"></span>
+                <span class="gender">Female</span>
+              </label>
+
+              <label for="dot-3">
+                <span class="dot three"></span>
+                <span class="gender">Prefer not to say</span>
+              </label>
+            </div>
+          </div>
+
+          <div class="button">
+            <input id="registerbtn" type="submit" value="Register">
+          </div>
+        </form>
+
+      </div>
+    </div>
+  </section>
+
+</body>
+
+</html>
