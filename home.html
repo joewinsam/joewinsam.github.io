@@ -5,9 +5,12 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>DOCLINE | JOEWIN SAM</title>
+  <title>DocUp | JOEWIN SAM</title>
 
   <link rel="stylesheet" href="home.css">
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 
 </head>
 
@@ -17,7 +20,7 @@
     <nav>
       <div class="menu">
         <div class="logo">
-          <a href="#home">DOCLINE</a>
+          <a href="#home">DocUp</a>
         </div>
         <ul>
           <li><a id="homebtn" href="#home">Home</a></li>
@@ -44,9 +47,10 @@
 
   <!-- About begins -->
   <section id="about"><br><br><br>
-    <h1 class="about-title">Joewin</h1>
-    <p class="about-text">DOCline is a doctor Booking or apppointment appplication which enables you to book an appointments
-      with ease.This platfrom makes the process more transparent and makes the time scheduling more easy.</p>
+    <h1 class="about-title">ABOUT</h1>
+    <p class="about-text">DocUp is a doctor Booking or apppointment appplication which enables you to book an appointments
+      with ease.This platfrom makes the process more transparent and makes the time scheduling more easy.
+    This application was fully devloped by JOEWIN SAM S</p>
   </section><br><br><br><br>
 
   <!-- Registration begins -->
@@ -124,13 +128,37 @@
         </div>
 
           <div class="button">
+            <!-- <input id="registerbtn" type="submit" value="Register"><button onclick="alert("Subscribe my channel Engineering OakDownload</button</a -->
             <input id="registerbtn" type="submit" value="Register">
           </div>
+          
         </form>
 
       </div>
     </div>
   </section>
+
+  <script>
+    $("#registerbtn").click(function(){
+      var firstName = $("#fname").val();
+      var lastName = $("#lname").val(); 
+      var userName = $("#username").val(); 
+      var emailID = $("#email").val(); 
+      var phoneNo = $("#phoneno").val(); 
+      var password1 = $("#password").val(); 
+      var password2 =  $("#confirmpass").val(); 
+      var profession = $("#profession").val();  
+      
+      if (firstName == "" || profession == "" || lastName == "" || userName == "" || emailID == "" || phoneNo == "" || password1 == "" || password2 == ""){
+        alert("All fields are mandatory!!"); 
+      } 
+      else{
+        alert("Registration Successfull!!");
+        form.reset(); 
+      }
+
+    });
+  </script>
 
 </body>
 
